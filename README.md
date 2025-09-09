@@ -2,7 +2,7 @@
 Zen Cart plugin that allows images to be uploaded from the admin section for whatever purposes (define pages, ez pages etc)
 
 <p>ZX Image Manager was built for Zen Cart 2.0.0 or newer. It has not been tested on earlier versions, but should
-        work with older versions using the appropriate set of file to install.</p>
+        work with older versions using the appropriate set of files to install.</p>
     <p><strong>Before you proceed, make a backup of your database and files. Installation is done at your own
         risk.</strong></p>
     <p>Unzip the files from &quot;files&quot; directory to your computer. Connect to your server via FTP. <br>
