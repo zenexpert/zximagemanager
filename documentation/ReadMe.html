@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>ZX Image Manager Documentation</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
+          media="screen, projection">
+    <style type="text/css" media="screen">
+        p, table, hr, .box {
+            margin-bottom: 25px;
+        }
+        .box p {
+            margin-bottom: 10px;
+        }
+        #gcc { display: none; }
+        .visible { display: block !important; }
+        img { max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ccc; padding: 5px; }
+        ol li { margin-bottom: 10px; }
+
+    </style>
+    <script>
+        function toggle() {
+            var element = document.getElementById("gcc");
+
+            if (element.classList) {
+                element.classList.toggle("visible");
+            } else {
+                var classes = element.className.split(" ");
+                var i = classes.indexOf("visible");
+
+                if (i >= 0)
+                    classes.splice(i, 1);
+                else
+                    classes.push("visible");
+                element.className = classes.join(" ");
+            }
+        }
+    </script>
+</head>
+
+
+<body>
+<div class="container">
+
+    <h3 class="center alt">ZX Image Manager Documentation v1.0</h3>
+
+    <hr>
+
+    <h1 class="center">ZX Image Manager</h1>
+
+    <div class="borderTop">
+        <div class="span-8 colborder info prepend-1">
+            <p class="prepend-top">
+                <strong>
+                    Version: 1.0<br>
+                    By: Leonard Blauhorn<br>
+                    Contact: <a href="mailto:info@zenexpert.com">e-mail me</a>
+                </strong>
+                (considered as quote requests)</p>
+        </div><!-- end div .span-6 -->
+
+        <div class="span-10 last">
+            <p class="prepend-top append-0">Thank you for purchasing this plugin. Please note that this plugin is
+                installed and used at your own risk. If you are unsure of how to complete the installation procedure
+                documented below, please contact us for assistance. ZenExpert takes no responsibility for problems
+                related to the installation or use of this plugin.</p>
+        </div>
+    </div><!-- end div .borderTop -->
+
+    <hr>
+
+    <h2 id="toc" class="alt">Table of Contents</h2>
+    <ol class="alpha">
+        <li><a href="#install">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#issues">Common Issues</a></li>
+        <li><a href="#credits">Sources and Credits</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#license">License</a></li>
+
+    </ol>
+
+    <hr>
+
+    <h3 id="install"><strong>Installing</strong> - <a href="#toc">top</a></h3>
+
+    <p>ZX Image Manager was built for Zen Cart 2.0.0 or newer. It has not been tested on earlier versions, but should
+        work with older versions using the appropriate set of file to install.</p>
+    <p><strong>Before you proceed, make a backup of your database and files. Installation is done at your own
+        risk.</strong></p>
+    <p>Unzip the files from &quot;files&quot; directory to your computer. Connect to your server via FTP. <br>
+        <strong>For Zen Cart v2.0 and newer:</strong> upload the content of zc_plugins directory to your website's zc_plugins directory and install using admin->Modules->Plugin Manager.<br>
+        <strong>For Zen Cart 1.5.x:</strong> Check your admin directory name and rename the one in this package accordingly. Upload your files using your FTP
+        client (I recommend using Filezilla) to the <strong>store root</strong>. Be careful, the store root directory on
+        the server is where your store is installed, not necessarily domain root. After all files are in place, go to your admin section and the plugin will automatically install. You might need to refresh the screen or navigate to any admin page first.</p>
+    <p>There are no core files affected or overwritten.</p>
+    <p></p>
+
+    <hr>
+
+    <h3 id="usage"><strong>Usage</strong> - <a href="#toc">top</a></h3>
+    <p>After installation, go to admin-&gt;Tools-&gt;Image Manager.</p>
+    <p>You will be able to upload new images to your main images directory or any already existing directory inside it.</p>
+    <p>If you need to upload images to a directory that doesn't exist, you have to create the directory first.</p>
+    <p>To browse the uploaded images, use the section below - select the folder you want to browse and click "View".</p>
+    <p>Please note browsing the main images directory is restricted by default. You can enable it from admin->Configuration->Images->Image Manager: Allow Browsing Main Images Directory by setting the value to true, but keep in mind it might cause problems if you have a large number of images in that directory.</p>
+    <p>Every image shows the HTML code which you can copy and use in your content as you wish.</p>
+    <hr>
+
+    <h3 id="issues"><strong>Common Issues</strong> - <a href="#toc">top</a></h3>
+
+    <p>None reported so far.</p>
+    <hr>
+
+    <h3 id="credits"><strong>Sources and Credits</strong> - <a href="#toc">top</a></h3>
+
+    External libraries used in this plugin:
+    <ul>
+        <li><a href="https://clipboardjs.com/" target="_blank">clipboard.js</a></li>
+    </ul>
+    <hr>
+
+    <h3 id="support"><strong>Support</strong> - <a href="#toc">top</a></h3>
+
+    <p>This plugin comes with limited support. All bugs will be fixed free of charge as soon as possible after receiving
+        notification. Bugs do not include new feature requests nor feature enhancements, but only refer to existing
+        features that don't work properly. Any code alterations made to any of the plugin files make the support
+        guarantee void.</p>
+    <p>The plugin comes with a professional installation service offered. If you select to install the plugin yourself,
+        no support will be provided regarding the installation procedure nor problems that may occur due to a failed
+        installation.</p>
+    <p><strong>Stay up-to-date</strong>: you can always find the most recent version <a
+            href="http://zenexpert.com/zen-cart-image-manager" target="_blank">here</a> and request for an updated
+        version if it exists. If you purchased the plugin through the ZenExpert shop, you can login to your account and download the latest version.</p>
+    <hr>
+
+    <h3 id="license"><strong>License</strong> - <a href="#toc">top</a></h3>
+    <p>The plugin is licensed under GPL.</p>
+    <p> There are no callbacks, activation keys, encryption or anything alike. The most common question asked is &quot;can
+        I use the plugin on multiple sites?&quot;. Yes, you can. There is no way for me to know what you're doing with
+        it. However, please keep in mind that A LOT of time and effort has been put into developing this plugin and your
+        honest use of the plugin would be very much appreciated. Therefore, I kindly ask you not to leak the plugin and
+        make it available for anyone to download through various download sites, as well as not to share it with your
+        friends. Also, in case you'll be installing this plugin on multiple sites for a profit, please share some profit
+        with me to show author support. </p>
+    <hr>
+
+    <p>Once again, thank you for downloading this plugin. As I said at the beginning, I'd be glad to help you if you
+        have any questions relating to this plugin. </p>
+
+    <p class="append-bottom alt large"><strong>Leonard</strong></p>
+    <p><a href="#toc">Go To Table of Contents</a></p>
+
+    <hr class="space">
+</div><!-- end div .container -->
+</body>
+</html>
